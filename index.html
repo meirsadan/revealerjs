@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revealer demo</title>
+    <style>
+        body {
+            font-size: 36px;
+        }
+        .container {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;  
+        }
+        .column:last-child {
+            flex: 2;
+        }
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <a href="#" data-click="#target_1">Click me</a>
+        </div>
+        <div class="column">
+            <div id="target_1" hidden>This can be viewed when clicking the other element</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <a href="#" data-click="#target_2" data-click-class="red">Click me</a>
+        </div>
+        <div class="column">
+            <div id="target_2">This will turn red when clicking the other element</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <div data-hover="#target_3">Hover me</div>
+        </div>
+        <div class="column">
+            <div id="target_3" hidden>This can be viewed when hovering over the other element</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <div data-hover="#target_4" data-hover-class="red">Hover me</div>
+        </div>
+        <div class="column">
+            <div id="target_4">This will turn red when hovering over the other element</div>
+        </div>
+    </div>
+    <script src="revealer.js"></script>
+</body>
+</html>

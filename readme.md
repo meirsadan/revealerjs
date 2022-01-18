@@ -6,11 +6,13 @@ Revealer.js detects special attributes that trigger simple interactions – hide
 
 It is intended for use by HTML/CSS developers who have not yet mastered JavaScript.
 
+[See a demo](https://meirsadan.github.io/revealerjs/).
+
 ## How to use it?
 
-1. Download `revealer.js` and put it in your website's directory.
+1. Download [`revealer.js`](https://raw.githubusercontent.com/meirsadan/revealerjs/main/revealer.js) and put it in your website's directory.
 
-2. Link to `revealer.js` by adding this code before the closing `</body>` tag:
+2. Link to the script by adding this code before the closing `</body>` tag:
 
 ```html
     ..
